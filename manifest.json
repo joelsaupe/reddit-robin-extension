@@ -1,0 +1,22 @@
+{
+    "name": "Reddit Robin Automatic Voter",
+    "short_name": "Robin Voter",
+    "description": "Votes to grow in Reddit's 2016 April Fool's Day experiment!",
+    "version": "0.2",
+    "permissions": [
+    "tabs","<all_urls>"
+    ],
+    "icons": { "16": "icon16.png",
+               "48": "icon48.png",
+              "128": "icon128.png" },
+    "content_scripts": [
+        {
+        "matches": [
+            "https://www.reddit.com/robin/"
+            ],
+        "js": ["robin.js"],
+        "run_at": "document_end"
+        }
+    ],
+    "manifest_version":2
+}
